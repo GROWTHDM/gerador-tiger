@@ -46,18 +46,3 @@ function updateTime() {
     let newTime = time.add(2, 'm');
     return (newTime.format("HH:mm"));
 }
-
-window.addEventListener("load", (event) => {
-    setTimeout(() => {
-        whatsAppBanner.style.display = "block";
-    }, 5000);
-});
-
-function goWhatsApp() {
-    window.open('https://www.redirectmais.com/run/comunidadetiger', '_blank');
-    whatsAppBanner.style.display = "none";
-}
-
-function closeWhatsApp() {
-    whatsAppBanner.style.display = "none";
-}
